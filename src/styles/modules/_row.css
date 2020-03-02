@@ -1,5 +1,20 @@
 .row {
 
+  &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   &--clearfix {
     &::after {
       content: '';
@@ -21,6 +36,14 @@
 
     & > div {
       padding-right: 100px;
+    }
+  }
+
+  &--gutters-small {
+    margin-right: -45px;
+
+    & > div {
+      padding-right: 45px;
     }
   }
 
@@ -54,6 +77,13 @@
 
     &__medium-8--smaller {
       width: 63%;
+    }
+  }
+
+  @mixin atLarge {
+    &__large-4 {
+      float: left;
+      width: calc(100% / 12 * 4);
     }
   }
 }
