@@ -16,6 +16,14 @@
     }
   }
 
+  &--gutters-large {
+    margin-right: -100px;
+
+    & > div {
+      padding-right: 100px;
+    }
+  }
+
   &__b-margin-until-medium {
     margin-bottom: 2rem;
   }
@@ -29,13 +37,21 @@
       float: left;
       width: calc(100% / 12 * 4);
     }
+
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
     &__medium-8 {
       float: left;
       width: calc(100% / 12 * 8);
     }
+
     &__medium-4--larger {
       width: 37%;
     }
+
     &__medium-8--smaller {
       width: 63%;
     }
