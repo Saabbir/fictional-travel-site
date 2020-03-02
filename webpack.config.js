@@ -13,10 +13,19 @@ module.exports = {
     path: path.resolve(__dirname, 'app'),
     filename: 'bundle.js'
   },
+  devServer: {
+    before: function(app, server) {
+      server._watch('./app/**/*.html')
+    },
+    contentBase: path.join(__dirname, 'app'),
+    hot: true,
+    port: 3000,
+    host: '0.0.0.0'
+  },
   module: {
     rules: [
       {
-        test: /\.postcss$/i,
+        test: /\.css$/i,
         use: [
           'style-loader', 
           'css-loader',
