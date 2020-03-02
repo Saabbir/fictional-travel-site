@@ -7,3 +7,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  padding: 4.5rem 0;
+
+  &--blue {
+    background-color: $mainBlue;
+  }
+}
