@@ -1,0 +1,54 @@
+.primary-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @mixin atMedium {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--pull-right {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: .8rem;
+
+    @mixin atMedium {
+      padding-right: 20px;
+      font-size: 1rem;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      @mixin atMedium {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 6px 8px;
+    display: inline-block;
+    background-color: rgba($mainBlue, .5);
+
+    @mixin atMedium {
+      padding: 12px 0;
+      background-color: transparent;
+    }
+  }
+}

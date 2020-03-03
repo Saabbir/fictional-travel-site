@@ -1,3 +1,8 @@
-import '../styles/index.css'
+import '../styles/index.postcss'
+import MobileMenu from './modules/MobileMenu'
 
-console.log('hello from index.js')
+if (module.hot) {
+  module.hot.accept()
+}
+
+new MobileMenu()

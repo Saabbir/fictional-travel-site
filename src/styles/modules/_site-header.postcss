@@ -1,0 +1,78 @@
+.site-header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
+  transition: background-color .3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba($mainBlue, .55);
+  }
+
+  @mixin atMedium {
+    background-color: rgba($mainBlue, .3);
+  }
+
+  &__btn-container {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    padding: 13px 29px;
+    background-color: $mainBlue;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    @mixin atMedium {
+      left: auto;
+      transform: none;
+      padding: 25px 35px;
+    }
+  }
+
+  &__menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 2;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
+  &__menu-content {
+    text-align: center;
+    padding-top: 90px;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+    z-index: -10;
+    position: relative;
+
+    @mixin atMedium {
+      text-align: auto;
+      padding-top: 0;
+      opacity: 1;
+      transform: none;
+      z-index: 1;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 1;
+    }
+  }
+}
