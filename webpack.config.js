@@ -10,7 +10,7 @@ const postCSSPlugins = [
 ]
 
 module.exports = {
-  entry: './src/scripts/index.js',
+  entry: './app/assets/scripts/index.js',
   output: {
     path: path.resolve(__dirname, 'app'),
     filename: 'bundle.js'
