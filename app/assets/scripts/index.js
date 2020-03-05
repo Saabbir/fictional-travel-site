@@ -1,4 +1,4 @@
-import '../styles/index.postcss'
+import '../styles/index.css'
 import MobileMenu from './modules/MobileMenu'
 import StickyHeader from './modules/StickyHeader'
 import RevealOnScroll from './modules/RevealOnScroll'
