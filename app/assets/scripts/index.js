@@ -3,7 +3,8 @@ import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 
 new MobileMenu()
-new RevealOnScroll()
+new RevealOnScroll('.feature-item', 75)
+new RevealOnScroll('.testimonial', 60)
 
 
 
