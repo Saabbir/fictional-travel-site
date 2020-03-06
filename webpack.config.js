@@ -16,8 +16,13 @@ const postCSSPlugins = [
 
 const cssConfig = {
   test: /\.(css|pcss|postcss)$/i,
-  use: [ 
-    'css-loader',
+  use: [
+    {
+      loader: 'css-loader',
+      options: {
+        url: false
+      }
+    },
     {
       loader: 'postcss-loader',
       options: {
@@ -39,7 +44,13 @@ let config = {
   entry: './app/assets/scripts/index.js',
   module: {
     rules: [
-      cssConfig
+      cssConfig,
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ]
   },
   plugins: [
