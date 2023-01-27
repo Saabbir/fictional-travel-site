@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e3bcc088-0f33-4be3-82a7-b595c2983a80/deploy-status)](https://app.netlify.com/sites/fictional-travel-site/deploys)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/e3bcc088-0f33-4be3-82a7-b595c2983a80/deploy-status)](https://app.netlify.com/sites/fictional-travel-site/deploys) -->
 
 # Fictional Travel Site
 
